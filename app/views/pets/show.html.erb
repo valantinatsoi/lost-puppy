@@ -1,0 +1,8 @@
+<%= @pet.name.upcase %>
+<%= @pet.species.capitalize %>
+<%= @pet.address %>
+<%= @pet.found_on %>
+
+<%= link_to'Back to all pets', pets_path %>
+<%= link_to'Delete', pet_path(@pet), method: :delete %>
+<%= link_to'Edit this pet', edit_pet_path(@pet) %>

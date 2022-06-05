@@ -1,0 +1,9 @@
+<h1>Edit this pet </h1>
+<%= simple_form_for(@pet) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :species %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to'Cancel', pet_path(@pet) %>

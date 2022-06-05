@@ -1,0 +1,10 @@
+<h1>Add Lost Pet</h1>
+
+<%= simple_form_for(@pet) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :species, collection: Pet::SPECIES %>
+  <%= f.button :submit, 'Report', class: 'btn-primary' %>
+<% end %>
+
+<%= link_to'Cancel', pets_path %>
