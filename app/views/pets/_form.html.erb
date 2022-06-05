@@ -1,0 +1,6 @@
+<%= simple_form_for(@pet) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :species, collection: Pet::SPECIES %>
+  <%= f.button :submit, btn_label, class: btn_class %>
+<% end %>
